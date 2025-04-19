@@ -1,8 +1,7 @@
-# Makefile to build the redirector library.
+# Makefile to build the MinIO mc-connector library.
 
-build: redirect_mc_lib.c
-	gcc redirect_mc_lib.c -o redirect_mc_lib.so
-	echo 'To use: export LD_PRELOAD=redirect_mc_lib.so'
+build: mc_lib.c
+	gcc mc_lib.c -o mc_lib.o
 
 clean:
 	rm -f *.o *.so
